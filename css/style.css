@@ -498,7 +498,6 @@ section.contact .container .content .contact-methods ul li {
   color: #05083b;
   display: flex;
   align-items: center;
-  background-color: #07b854;
   width: fit-content;
   max-width: 100%;
   margin-top: 20px;
@@ -545,3 +544,4 @@ section.contact .container .content-banner img {
   max-width: 100%;
 }
 /* end contact section */
+
