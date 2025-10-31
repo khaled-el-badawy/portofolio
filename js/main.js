@@ -98,37 +98,37 @@ let cardsBottomRow = document.querySelector(
 let cardsData = [
   {
     id: 1,
-    imgSrc: "../media/pro1.jpg",
+    imgSrc: "./media/pro1.jpg",
     title: "savyy",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
     id: 2,
-    imgSrc: "../media/pro2.jpg",
+    imgSrc: "./media/pro2.jpg",
     title: "Canvix",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
     id: 3,
-    imgSrc: "../media/pro3.jpg",
+    imgSrc: "./media/pro3.jpg",
     title: "3OTOL",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
     id: 4,
-    imgSrc: "../media/pro4.jpg",
+    imgSrc: "./media/pro4.jpg",
     title: "ELGANTER",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
     id: 5,
-    imgSrc: "../media/pro5.jpg",
+    imgSrc: "./media/pro5.jpg",
     title: " Barista",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
   {
     id: 6,
-    imgSrc: "../media/pro6.jpg",
+    imgSrc: "./media/pro6.jpg",
     title: "DITTO.",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
   },
@@ -175,3 +175,4 @@ window.addEventListener("load", () => {
 });
 
 /* End projects */
+
