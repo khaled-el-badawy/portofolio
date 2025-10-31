@@ -88,6 +88,90 @@ const observer = new IntersectionObserver(function (entries, observer) {
 observer.observe(skillsSection);
 
 /*end skills*/
+/* Start projects */
+let cardsTopRow = document.querySelector(
+  "section.projects .container .row.top"
+);
+let cardsBottomRow = document.querySelector(
+  "section.projects .container .row.bottom"
+);
+let cardsData = [
+  {
+    id: 1,
+    imgSrc: "../media/pro1.jpg",
+    title: "savyy",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 2,
+    imgSrc: "../media/pro2.jpg",
+    title: "Canvix",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 3,
+    imgSrc: "../media/pro3.jpg",
+    title: "3OTOL",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 4,
+    imgSrc: "../media/pro4.jpg",
+    title: "ELGANTER",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 5,
+    imgSrc: "../media/pro5.jpg",
+    title: " Barista",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 6,
+    imgSrc: "../media/pro6.jpg",
+    title: "DITTO.",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+];
 
+function displayTcards(data) {
+  // cardsTopRow.innerHTML = "";
+  data.map((e) => {
+    cardsTopRow.innerHTML += `
+    <div class="project-card">
+    <div class="img-box">
+    <img src=${e.imgSrc} alt="" />
+    </div>
+    <div class="content">
+    <a href="" target="_blank"><h3>${e.title}</h3></a>
+    <p>${e.description}</p>
+    </div>
+    </div>
+    `;
+    console.log(e);
+  });
+}
+function displayBcards(data) {
+  // cardsTopRow.innerHTML = "";
+  data.map((e) => {
+    cardsBottomRow.innerHTML += `
+    <div class="project-card">
+    <div class="img-box">
+    <img src=${e.imgSrc} alt="" />
+    </div>
+    <div class="content">
+    <a href="" target="_blank"><h3>${e.title}</h3></a>
+    <p>${e.description}</p>
+    </div>
+    </div>
+    `;
+    console.log(e);
+  });
+}
 
+window.addEventListener("load", () => {
+  displayTcards(cardsData.slice(0,3));
+  displayBcards(cardsData.slice(3,6));
+});
 
+/* End projects */
