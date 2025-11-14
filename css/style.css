@@ -430,9 +430,11 @@ section.projects .container .row .project-card:hover img {
 .services .container .site .text p {
   text-transform: capitalize;
 }
-.services .container .site .text a {
+.services .container .site .text a,
+.my-cv a {
   color: var(--section-background);
   text-decoration: none;
+  text-align: center;
   padding: 5px 10px;
   border-radius: 20px;
   align-self: flex-end;
@@ -443,16 +445,35 @@ section.projects .container .row .project-card:hover img {
   backdrop-filter: blur(10px);
   background: #ffffff0d;
 }
-.services .container .site .text a:hover {
+.services .container .site .text a:hover,
+.my-cv a:hover {
   transform: scale(1.1);
 }
-
+.my-cv {
+  width: 100%;
+  height: 100%;
+  /* background-color: #6e2828; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-cv a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
 /* end Services */
 
 /* start contact section */
 section.contact {
   width: 100%;
-  padding-top:var(--section-padding) ;
+  padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
 section.contact .container {
@@ -466,7 +487,6 @@ section.contact .heading {
   color: var(--main-color);
 }
 section.contact .container .content {
-
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -502,18 +522,17 @@ section.contact .container .content .contact-methods ul li {
   width: fit-content;
   max-width: 100%;
   margin-top: 20px;
-  
 }
 section.contact .container .content .contact-methods ul li.social-icons {
   margin-top: 30px;
   display: flex;
 }
-section.contact .container .content .contact-methods ul li.social-icons i{
+section.contact .container .content .contact-methods ul li.social-icons i {
   font-size: 40px;
 }
 section.contact .container .content .contact-methods ul li i {
   margin-right: 10px;
-  font-size:30px;
+  font-size: 30px;
 }
 section.contact .container .content .contact-methods ul li a {
   color: #05083b;
@@ -538,8 +557,8 @@ section.contact .container .content-banner::after {
   width: 100%;
   height: 100%;
   background-color: var(--secondary-color);
-  position:absolute;
-  opacity: .2;
+  position: absolute;
+  opacity: 0.2;
 }
 section.contact .container .content-banner img {
   max-width: 100%;
@@ -547,58 +566,58 @@ section.contact .container .content-banner img {
 /* end contact section */
 
 /* start footer */
-footer{
+footer {
   background-color: #040526;
-  background: linear-gradient( #053b1c 30%,#040526 );
+  background: linear-gradient(#053b1c 30%, #040526);
 }
-footer .container{
+footer .container {
   padding-top: var(--section-padding);
-padding-bottom: var(--section-padding);
+  padding-bottom: var(--section-padding);
   min-height: 150px;
   position: relative;
 }
-footer .container .top{
+footer .container .top {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
   margin-bottom: 10px;
 }
-footer .container .top a.logo{
-   text-transform: uppercase;
+footer .container .top a.logo {
+  text-transform: uppercase;
   /* background-color: aqua; */
-  
+
   font-family: "Caveat", cursive;
   text-decoration: none;
   font-size: 30px;
   font-weight: 900;
   color: var(--section-background);
 }
-footer .container .top nav{
+footer .container .top nav {
   width: 50%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex-wrap: wrap;
-gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-footer .container .top nav a{
+footer .container .top nav a {
   text-decoration: none;
   color: var(--section-background);
 }
-footer .container .middle{
+footer .container .middle {
 }
-footer .container .middle .social-icons{
+footer .container .middle .social-icons {
   margin: 10px 0;
 }
-footer .container .middle .social-icons a{
+footer .container .middle .social-icons a {
   color: var(--section-background);
-  font-size: 30px ;
+  font-size: 30px;
 }
 footer .container .top nav a:hover,
-footer .container .middle .social-icons a:hover{
-color: #f6f6f64e;
+footer .container .middle .social-icons a:hover {
+  color: #f6f6f64e;
 }
-  footer .container .copyright{
+footer .container .copyright {
   width: 90%;
   max-width: 100%;
   text-align: center;
