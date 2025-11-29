@@ -1,3 +1,26 @@
+// srart nav
+let doc = document;
+let burgerIcon = document.querySelector("header .container i");
+let mobileNav = document.querySelector("header .container nav.mobile-nav");
+
+// function showMenu() {
+//   mobileNav.classList.toggle("show");
+// }
+
+function showMenu(e) {
+  mobileNav.classList.toggle("show");
+  e.stopPropagation();
+}
+function hideMenu() {
+  mobileNav.classList.remove("show");
+}
+
+doc.addEventListener("click", hideMenu);
+
+burgerIcon.addEventListener("click", showMenu);
+
+// end nav
+
 /*start skills*/
 const toolIcon = document.querySelectorAll(
   "section.skills .container ul li img"
@@ -46,11 +69,11 @@ const toolsData = [
 // --- دالة عرض التفاصيل (تبقى كما هي) ---
 
 function showDetails(tool) {
-  toolInfo.classList.remove("show");
+  toolInfo.classList.remove("show-skill");
   void toolInfo.offsetWidth;
   toolName.innerHTML = tool.name;
   toolDescription.innerHTML = tool.description;
-  toolInfo.classList.add("show");
+  toolInfo.classList.add("show-skill");
 }
 
 // ربط كل أيقونة بالحدث
@@ -170,8 +193,8 @@ function displayBcards(data) {
 }
 
 window.addEventListener("load", () => {
-  displayTcards(cardsData.slice(0,3));
-  displayBcards(cardsData.slice(3,6));
+  displayTcards(cardsData.slice(0, 3));
+  displayBcards(cardsData.slice(3, 6));
 });
 
 /* End projects */
