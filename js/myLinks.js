@@ -13,7 +13,7 @@ let mySocial = [
     imgSrc: "./media/myLinks/linkedin.png",
     title: "linked in",
     link: "https://www.linkedin.com/in/khaled-elbadawy/",
-    isActive: false,
+    isActive: true,
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ let mySocial = [
     imgSrc: "./media/myLinks/instagram.png",
     title: "instagram",
     link: "https://www.instagram.com/programmer_badawy",
-    isActive: false,
+    isActive: true,
   },
   {
     id: 8,
@@ -133,5 +133,3 @@ function displayIcons(data) {
 window.addEventListener("load", () => {
   displayIcons(mySocial);
 });
-
-

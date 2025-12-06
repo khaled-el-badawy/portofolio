@@ -8,7 +8,7 @@ body {
   width: 100%;
   min-height: 100vh;
 
-  background: linear-gradient(#053b1c, #0cce20);
+  background: linear-gradient(var(--secondary-color), var(--main-color));
 }
 header {
   top: 0;
